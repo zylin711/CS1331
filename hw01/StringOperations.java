@@ -29,7 +29,7 @@ public class StringOperations {
         // d: Create a substring of the "name" section and concatenate "1331"
         String[] parts = webAddress.split("\\."); // Split the web address into parts
         String nameSection = parts[1]; // Extract "name" section
-        String finalResult = nameSection  + "1331"; // Concatenate the extracted name with "1331"
+        String finalResult = nameSection.concat("1331"); // Concatenate the extracted name with "1331"
         System.out.println("Modified Web Address: " + finalResult);
     }
 }
