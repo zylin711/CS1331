@@ -9,7 +9,10 @@ public class Calculator {
         String operation = scanner.nextLine().trim().toLowerCase();
 
         switch (operation) {
+            // add - takes two integers, adds them together and prints out the result
             case "add":
+            // subtract - takes two integers, subtracts the second entered integer
+            // from the first and prints out the result
             case "subtract":
                 System.out.println("Enter two integers:");
                 if (scanner.hasNextInt()) {
@@ -29,7 +32,11 @@ public class Calculator {
                 }
                 break;
 
+            // multiply - takes two doubles, multiplies them together and
+            // prints out the result to two decimal places
             case "multiply":
+            // divide - takes two doubles, divides the first entered double by the
+            // second and prints out the result to two decimal places
             case "divide":
                 System.out.println("Enter two doubles:");
                 if (scanner.hasNextDouble()) {
@@ -53,6 +60,8 @@ public class Calculator {
                 }
                 break;
 
+            // alphabetize - takes two words (without spaces) and tells which
+            // word comes before the other lexicographically
             case "alphabetize":
                 System.out.println("Enter two words:");
                 if (scanner.hasNext()) {
